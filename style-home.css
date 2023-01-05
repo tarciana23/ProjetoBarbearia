@@ -1,0 +1,52 @@
+    body {
+        background: white;
+    }
+    
+    .centralizado {
+        text-align: center;
+    }
+    
+    #banner {
+        width: 100%;
+    }
+    
+    .principal {
+        background: grey;
+        padding: 30px;
+    }
+    
+    .titulo {
+        padding-left: 20px;
+    }
+    
+    #missao {
+        font-style: 20px;
+    }
+    
+    p {
+        text-align: center;
+    }
+    
+    p em strong {
+        color: red;
+    }
+    
+    .itens {
+        font-style: italic;
+    }
+    
+    .bene {
+        backgrounD: #FFFFFF;
+        padding: 20px;
+    }
+    
+    ul {
+        display: inline-block;
+        vertical-align: top;
+        width: 20px;
+        margin-right: 15%;
+    }
+    
+    .imagem {
+        width: 50%
+    }

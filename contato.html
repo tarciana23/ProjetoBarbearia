@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Contato</title>
+
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="box">
+            <h1><img src="logo.png" alt="logo marca"></h1>
+
+            <nav>
+                <ul>
+                    <li>
+                        <a href="index.html " target="_blank ">Home</a>
+                    </li>
+                    <li>
+                        <a href="produtos.html ">Produtos</a>
+                        <a></li>
+                    <li>
+                        <a href="contato.html ">Contato</a>
+                    </li>
+                </ul>
+            </nav>
+
+        </div>
+
+    </header>
+    <main>
+        <form>
+            <label for="nomesobrenome">Nome e Sobrenome</label>
+            <input type="text" id="nomesobrenome" class="padraoInput" required>
+            <!---- o label é uma etiqueta para input
+            e o input é uma entrdada de dados
+            Inserindo a palavra required o preeenchimento do input
+        se torna obrigatório
+        placeholder é uma sugestão de o que é para ser escrito no campo até que o usuario escreva---->
+
+            <label for="email ">Email</label>
+            <input type="email" id="email" class="padraoInput" required placeholder="seuemail@dominio.com">
+
+            <label for=" telefone ">Telefone</label>
+            <input type="tel" id="telefone " class="padraoInput" required placeholder="xx xxxxx - xxxx">
+
+            <label for="mensagem ">Mensagem</label>
+            <textarea cols="70 " rowns="50 " id="mensagem " class="padraoInput" required></textarea>
+            <!---- a text area é uma tag de conteúdo!
+            com o cols definimos a qtd de colunas
+            e com, rowns definimos a altura!---->
+
+            <fieldset>
+                <legend>Como prefere nosso contato?</legend>
+                <label for="radio_email "> <input type="radio" name="contato" value="email " id="radio_email">Email</label>
+
+                <label for="radio_telefone "><input type="radio" name="contato" value="telefone " id="radio_telefone">Telefone</label>
+
+                <label for="radio_whatsapp "><input type="radio" name="contato" value="Whatsapp " id="radio_whatsapp" checked>Whatsapp</label>
+                <!---- radiobox um campo de selecão de 3 conteúdos que apenas um pode ser escolhido!
+                name="contato " faz com que todos eles sejam do mesmo grupo e que apena um possa ser
+                selecionado 
+                checked usado para marcar uma pção
+                fildset no lugar da div
+                legend é o titulo do formulário---->
+            </fieldset>
+
+            <fieldset>
+                <legend>Qual horário prefere ser atendido?</legend>
+                <select>
+                <option>Manhã</option>
+                <option>Tarde</option>
+                <option>Noite</option>
+                </select>
+            </fieldset>
+
+
+            <label><input type="checkbox" class="checkbox" checked>Gostaria de receber nossas novidades por email?</label>
+            <input type="submit" class="enviar">
+            <!---- o submit é para enviar os dados!---->
+
+        </form>
+        <table>
+            <thead>
+                <tr>
+                    <th>Dia</th>
+                    <th>horário</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Segunda</td>
+                    <td>8h - 20h</td>
+                </tr>
+                <tr>
+                    <td>Quarta</td>
+                    <td>8h - 20h</td>
+
+                </tr>
+                <tr>
+                    <td>Sexta</td>
+                    <td>8h - 20h</td>
+                </tr>
+
+            </tbody>
+        </table>
+        <!---- 4 linhas tr
+            cada uma com duas celulas td
+        Uma tabela é dividida em cabecalho: thead e th,
+        conteúdo : tbody e rodapé
+        A tag table, que representa a tabela
+A tag tr, que representa a linha da tabela
+A tag td, que representa a célula da tabela
+A tag thead, que representa o cabeçalho da tabela
+A tag tbody, que representa o corpo da tabela
+A tag th, que representa a célula do cabeçalho da tabela
+A tag tfoot, que representa o rodapé da tabela---->
+    </main>
+    <footer>
+        <img src=" logo-branco.png " alt="logo barbearia">
+        <p class="copyrigths ">&copy;Copyright Barbearia Alura - 2019 </p>
+    </footer>
+</body>
+
+</html>

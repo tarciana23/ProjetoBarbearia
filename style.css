@@ -1,0 +1,361 @@
+ body {
+     font-family: 'Montserrat', sans-serif;
+ }
+ 
+ header {
+     background: #BBBBBB;
+ }
+ 
+ .box {
+     position: relative;
+     /*com esse tipo de posicao a caixa fica relativa en relação ao doc web*/
+     width: 940px;
+     /*tamanho do menu*/
+     margin: 0 auto;
+     /*para cima e para baixo = 0 e para os lados automatico*/
+     /*usando essa margim para centralizar o texto em qlq tamanho de tela
+    pois as laterais serão caluladas automaticamente*/
+ }
+ 
+ nav {
+     position: absolute;
+     /*a posição é absoluta para poder movimentar o menu de navegacao dentro da caixa que seria o cabecalho */
+     /*esta colcado na caixa*/
+     top: 110px;
+     right: 0;
+ }
+ 
+ nav li {
+     display: inline;
+     margin: 0 0 0 15px;
+     /*cima, esquerda, baixo, direita*/
+ }
+ 
+ nav a {
+     text-transform: uppercase;
+     /*deixando em maiúsculo*/
+     color: #000000;
+     font-weight: bold;
+     /*deixando a fonte mais "pesada"*/
+     font-size: 22px;
+     text-decoration: none;
+ }
+ 
+ nav a:hover {
+     color: #C78C19;
+     text-decoration: underline;
+ }
+ /*hover é quando o mouse esta por cima do elemento*
+quando o mouse estiver por cima do link da nav*/
+ 
+ .produtos {
+     width: 940px;
+     margin: 0 auto;
+     padding: 50px 0;
+     /*espaço 50px para os cima/baixo
+    0 para os lados*/
+ }
+ 
+ .produtos li {
+     display: inline-block;
+     text-align: center;
+     width: 30%;
+     vertical-align: top;
+     /*alinhando os conteúdos pela linha de cima*/
+     margin: 0 1.5%;
+     padding: 30px 20px;
+     box-sizing: border-box;
+     /*faz com que a porcentagem não seja somada com os px
+    assim a largura fixa é 30% e o padding está dentro desse
+    tamanho*/
+     /* border-color: #000000;
+    border-width: 2px;
+    border-style: solid;
+    versao extendida */
+     border: 2px solid #000000;
+     border-radius: 40px;
+ }
+ 
+ .produtos li:hover {
+     border-color: #C78C19;
+ }
+ 
+ .produtos li:active {
+     border-color: #080;
+ }
+ 
+ .produtos li:hover h2 {
+     font-size: 40px;
+ }
+ /*quando o mouse estiver por cima do li
+alterar o h2. Só assim conseguimos alterar
+pq o h2 já tinha um tamanho definido*/
+ /*active
+quando o elemento estiver ativo, ou seja, quando o usuário
+pressionar com o mouse por cima do elemento*/
+ 
+ .produtos h2 {
+     font-size: 30px;
+     font-weight: bold;
+ }
+ 
+ .descricao {
+     font-size: 18px;
+ }
+ 
+ .preco {
+     font-size: 22px;
+     font-weight: bold;
+     margin: 10px 0 0;
+     /*10px para cima 0  para baixo e 0 para os lados*/
+ }
+ 
+ footer {
+     text-align: center;
+     background: url(bg.jpg);
+     padding: 40px 0;
+ }
+ 
+ .copyrigths {
+     color: #FFFFFF;
+     font-size: 11px;
+     margin: 20px 0 0;
+ }
+ /*unidoce; linguagem universal para representar simbolos*/
+ 
+ main {}
+ 
+ form {
+     width: 940px;
+     /*tamanho do menu*/
+     margin: 0 auto;
+ }
+ 
+ form label,
+ form legend {
+     display: block;
+     font-size: 20px;
+     margin: 15px;
+ }
+ 
+ .padraoInput {
+     display: block;
+     margin: 0 0 20px;
+     padding: 10px 25px;
+     width: 50%;
+ }
+ 
+ .checkbox {
+     margin: 10px 0;
+ }
+ 
+ .enviar {
+     width: 40%;
+     padding: 15px 0;
+     background: orange;
+     color: white;
+     font-weight: bold;
+     font-size: 18px;
+     border: none;
+     border-radius: 10px;
+     transition: 1s all;
+     cursor: pointer
+ }
+ 
+ .enviar:hover {
+     background-color: darkorange;
+     transform: scale(1.2)/*rotateX(70deg);*/
+ }
+ /*form input ,  form textarea os dois tem as mesmas
+configurações
+transform tem a propriedade de eslaca e estamos
+aumentando o botão em 20%*
+a transição de todos os elementos
+vão demorar 1 s  transition: 1s all;
+explorar transformação/
+
+
+/*Hierarquia css
+estilo inline  = 1000
+id = 100
+class = 10
+tag = 1*/
+ 
+ table {
+     margin: 20px 40px
+ }
+ 
+ thead {
+     background: #555555;
+     color: white;
+     font-weight: bold;
+ }
+ 
+ td,
+ th {
+     border: 1px solid #000000;
+     padding: 8px 15px
+ }
+ /*css pagina index*/
+ 
+ .banner {
+     width: 100%;
+ }
+ 
+ .titulo-principal {
+     text-align: center;
+     font-size: 2em;
+     margin: 0 0 1em;
+     clear: left;
+     text-shadow: 2px 2px #000000;
+     /*sombra no texto*/
+ }
+ 
+ .principal {
+     padding: 3em 0;
+     background: #FEFEFE;
+     width: 940px;
+     margin: 0 auto;
+ }
+ /* clear: left;
+}impando o float*/
+ 
+ .principal p {
+     margin: 0 0 1em;
+ }
+ 
+ .principal strong {
+     font-weight: bold;
+ }
+ 
+ .principal em {
+     font-style: italic;
+ }
+ 
+ .conteudo-beneficios {
+     width: 640px;
+     margin: 0 auto;
+ }
+ 
+ .beneficios {
+     padding: 3em 0;
+     background: #888888;
+     margin: 0 auto
+ }
+ 
+ .lista-beneficios {
+     width: 40px;
+     display: inline-block;
+     vertical-align: top;
+ }
+ 
+ .itens {
+     line-height: 1.5;
+     /*altura da linha
+    para selecionar qualquer elemento da lisa
+    itens:nth-child(4) -> o quarto elemento da lista vai ficar negativo
+     itens:nth-child(2n)->pegando os elementos pares*/
+ }
+ 
+ .itens:first-child {
+     font-weight: bold;
+ }
+ /*pegando o primeiro elemento usando pseudoclasses*/
+ 
+ .itens:before {
+     content: "★";
+ }
+ 
+ .imagem-beneficios {
+     width: 60%;
+     opacity: 1;
+     transition: 400ms;
+     box-shadow: 10px 10px 5px 10px#000000;
+     /*10px eixo x e 10px no eixo y
+     5px de sólido para transparente
+     20px a itensidade da sombra*/
+ }
+ 
+ .imagem-beneficios:hover {
+     opacity: 0.3;
+ }
+ 
+ .mapa {
+     padding: 3em 0;
+     background: linear-gradient(#FEFEFE, #888888);
+ }
+ 
+ .mapa-conteudo {
+     width: 940px;
+     margin: 0 auto;
+ }
+ 
+ .mapa p {
+     margin: 0 0 2em;
+     text-align: center;
+ }
+ 
+ .video {
+     width: 560px;
+     margin: 2em auto;
+ }
+ 
+ .utensilios {
+     width: 120px;
+     float: left;
+     margin: 0 20px 20pc 0;
+     /*cima direita baixo esquerda*/
+ }
+ /*em é a medida proporcional para px 
+2em: 2 vezes o tamanho base
+margin 1em uma margin proporcional ao tamanho da fonte
+*/
+ 
+ @media and(max-width: 400px) {
+     body {
+         background:
+     }
+ }
+ 
+ @media screen and (max-width: 400px) {
+     .caixa,
+     .principal,
+     .conteudo-beneficios,
+     .mapa-conteudo,
+     .video {
+         width: auto;
+     }
+     h1 {
+         text-align: center;
+         ;
+     }
+     nav {
+         position: static;
+     }
+     .lista-beneficios,
+     .imagem-beneficios {
+         width: 100px;
+     }
+ }
+ /*seletores especiais
+ 
+ main >p{
+    background:blue;
+}
+*selecionamos o primeiro parágrafo da main
+
+img+p {
+    background:red;
+}
+*selecionamos o primeiro parágro depois da img
+
+img ~ p{
+    background:yellow;
+}
+*selecionamos todos os parágrafo depois da img
+.principal p:not(#missao){
+    background: orange;
+}
+*selecionamos todos os parágrafos da classe principal
+exceto o que tem o identificador #missao
+    */
